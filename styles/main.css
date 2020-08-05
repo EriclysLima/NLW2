@@ -1,5 +1,6 @@
 /* CSS - Cascading Style Sheets */
 :root {
+    /* # Variáveis CSS */
     --color-background: #F0F0F7;
     --color-primary-lighter: #9871F5;
     --color-primary-light: #916BEA;
@@ -19,11 +20,47 @@
     --color-box-base: #FFFFFF;
     --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
-    
-    /* Tamanho da fonte Padrao: 16px - 100% - 1rem */
-    font-size: 60%;/* controle das medidas rem */
+
+    /* # tamanho da fonte padrão 16px - 100% - 1rem */
+    font-size: 60%; /* controle das medidas rem */
 }
 
 * {
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+    /* font: 500 1.6rem Poppins; */
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    color: var(--color-text-base)
+}
+
+#container {
+    width: 90vw;
+    max-width: 700px;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
 }
